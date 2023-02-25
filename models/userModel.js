@@ -15,7 +15,6 @@ const userSchema = mongoose.Schema({
     },
     phone: {
         type: Number,
-        unique: true,
         required: [true, "A User must provide his Phone Number"]
     },
     email: {

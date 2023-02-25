@@ -12,7 +12,7 @@ exports.Register = (req, res) => {
             if (err) {
                 return console.log(err);
             } else {
-                const newUser = await User.create({ avatar, name, bio, phone, email, gender, password: spassword });
+                const newUser = await User.create({ avatar, name, bio, phone, email, password: spassword });
 
                 res.status(201).json({
                     status: "success",
